@@ -1,4 +1,4 @@
-package mergectx
+package mergecontext
 
 import (
 	"context"

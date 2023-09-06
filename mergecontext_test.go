@@ -1,4 +1,4 @@
-package mergectx_test
+package mergecontext_test
 
 import (
 	"context"
@@ -108,8 +108,8 @@ func (tc *TestContext) num(idx int) int {
 	return tc.numList[idx]
 }
 
-func (tc *TestContext) mergeCtx() mergectx.Context {
-	return mergectx.New(tc.ctxs[:]...)
+func (tc *TestContext) mergeCtx() mergecontext.Context {
+	return mergecontext.New(tc.ctxs[:]...)
 }
 
 // -----------------------------------------------------------------------------
