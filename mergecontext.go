@@ -96,5 +96,5 @@ func (mc *mergeContext) monitor() {
 	mc.err = mc.ctxs[winner].Err()
 	mc.lock.Unlock()
 
-	mc.doneCh <- struct{}{}
+	close(mc.doneCh)
 }
